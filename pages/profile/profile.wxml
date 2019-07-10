@@ -1,0 +1,23 @@
+<!--pages/profile/profile.wxml-->
+<view class="avatar">
+  <view class="container">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </block>
+    </view>
+  </view>
+</view>
+<view class="cells">
+  <navigator class="item" url="/pages/persons/persons">个人资料</navigator>
+  <!-- <navigator class="item">我的优惠券</navigator> -->
+  <!-- <view class="divider"></view> -->
+  <navigator class="item">常见问题</navigator>
+  <navigator class="item">使用条款</navigator>
+  <navigator class="item">隐私权政策</navigator>
+  <navigator class="item">联系客服</navigator>
+  <view class="divider"></view>
+  <navigator url="/pages/settings/settings" class="item">设置</navigator>
+</view>

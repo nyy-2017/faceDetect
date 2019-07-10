@@ -1,0 +1,44 @@
+<view wx:if="{{isHide}}">
+    <view wx:if="{{canIUse}}" >
+        <view class='header'>
+            <image src='../../assets/wx_login.png'></image>
+        </view>
+
+        <view class='contents'>
+            <view>申请获取以下权限</view>
+            <text>获得你的公开信息(昵称，头像等)</text>
+        </view>
+        <view class='bottom'>
+          <button  type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">
+              授权登录
+          </button>
+        </view>
+    </view>
+    <view wx:else>请升级微信版本</view>
+</view>
+
+<view wx:else>
+<!-- start页面 -->
+  <view class="container">
+    <view class="remind-box" wx:if="{{remind}}">
+      <image class="remind-img" src="../../assets/more/loading.gif"></image>
+    </view>
+    <block wx:else>
+      <image class="title" src="../../assets/more/title8.png"></image>
+      <view class="content">
+        <view class="hd" style="transform:rotateZ({{angle}}deg);">
+          <image class="logo" src="{{userInfo.avatarUrl}}"></image>
+          <image class="wave" src="../../assets/more/wave.png" mode="aspectFill"></image>
+          <image class="wave wave-bg" src="../../assets/more/wave.png" mode="aspectFill"></image>
+        </view>
+        <view class="bd">
+          <image class="smalltitle" src="../../assets/more/confirm-word1.png"></image>
+          <view class="confirm-btn" bindtap='goToIndex'>
+            <text>进入人脸识别小程序</text>
+          </view>
+          <text class="copyright">Copyright © 京-201906</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

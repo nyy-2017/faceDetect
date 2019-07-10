@@ -1,0 +1,4 @@
+/* message.wxss */
+.messages{
+  text-align: center;
+}

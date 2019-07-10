@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/start/start",
+    "pages/persons/persons",
+    "pages/login/login",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/messages/messages",
+    "pages/profile/profile",
+    "pages/settings/settings"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序功能的使用"
+    }
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffb6c1",
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "人脸检测",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#bcc0c9",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/index.png",
+        "selectedIconPath": "assets/index-active.png"
+      },
+      {
+        "pagePath": "pages/messages/messages",
+        "text": "消息",
+        "iconPath": "assets/message.png",
+        "selectedIconPath": "assets/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/person.png",
+        "selectedIconPath": "assets/person-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap.json"
+}

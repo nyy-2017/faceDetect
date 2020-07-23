@@ -36,7 +36,7 @@
           <view class="confirm-btn" bindtap='goToIndex'>
             <text>进入人脸识别小程序</text>
           </view>
-          <text class="copyright">Copyright © 京-201906</text>
+          <text class="copyright">Copyright © 京-2020-07</text>
         </view>
       </view>
     </block>

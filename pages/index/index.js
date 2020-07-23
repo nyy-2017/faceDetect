@@ -70,8 +70,4 @@ onShareAppMessage() {
   return { title: `刚刚测了我的颜值「${this.data.beauty.beauty}」你也赶紧来试试吧！` }
 }
 
-
-
-
 })
-

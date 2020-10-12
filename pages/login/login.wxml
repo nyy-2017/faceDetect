@@ -1,12 +1,11 @@
 <view wx:if="{{isHide}}">
     <view wx:if="{{canIUse}}" >
         <view class='header'>
-            <image src='../../assets/wx_login.png'></image>
+          <image src='../../assets/wx_login.png'></image>
         </view>
-
         <view class='contents'>
-            <view>申请获取以下权限</view>
-            <text>获得你的公开信息(昵称，头像等)</text>
+          <view>申请获取以下权限</view>
+          <text>获得你的公开信息(昵称，头像等)</text>
         </view>
         <view class='bottom'>
           <button  type='primary' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="bindGetUserInfo">

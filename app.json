@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/start/start",
-    "pages/persons/persons",
     "pages/login/login",
     "pages/index/index",
     "pages/logs/logs",
     "pages/messages/messages",
+    "pages/person/person",
+    "pages/turntable/turntable",
     "pages/profile/profile",
     "pages/settings/settings"
   ],

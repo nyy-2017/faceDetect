@@ -1,0 +1,39 @@
+<!-- 画布大小按需定制 这里我按照背景图的尺寸定的  -->
+<canvas canvas-id="shareImg"></canvas>
+
+<!-- 预览区域  -->
+<view class='preview'>
+  <image class="tag" src='{{prurl}}' mode='aspectFit'></image>
+  <view class="bottomAll">
+    <view class="btnAll">
+      <view class="item">
+        <button class="btn" size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="1">
+          <image src="../../images/demo1.png" class="demo" mode='aspectFit'></image>
+          <span>生成头像1 </span>
+        </button>
+      </view>
+
+      <view class="item">
+        <button class="btn" size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="2">
+          <image src="../../images/demo2.png" class="demo" mode='aspectFit'></image>
+          <span> 生成头像2</span>
+        </button>
+      </view>
+      <view class="item">
+        <button class="btn" size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="3">
+          <image src="../../images/demo3.png" class="demo" mode='aspectFit'></image>
+          <span>生成头像3</span>
+        </button>
+      </view>
+      <view class="item">
+        <button class="btn" size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="4">
+          <image src="../../images/demo4.png" class="demo" mode='aspectFit'></image>
+          <span>生成头像4</span>
+        </button>
+      </view>
+    </view>
+    <view class="save">
+      <button type='primary' bindtap='save'>保存头像到本地</button>
+    </view>
+  </view>
+</view>

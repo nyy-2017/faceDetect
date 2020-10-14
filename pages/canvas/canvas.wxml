@@ -1,0 +1,16 @@
+<!-- 画布大小按需定制 这里我按照背景图的尺寸定的  -->
+<canvas canvas-id="shareImg"></canvas>
+
+<!-- 预览区域  -->
+<view class='preview'>
+  <image src='{{prurl}}' mode='aspectFit'></image>
+  <view class="tab">
+    <button size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="1">生成头像1</button>
+    <button size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="2">生成头像2</button>
+    <button size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="3">生成头像3</button>
+    <button size='mini' open-type="getUserInfo" bindgetuserinfo="shengcheng" data-k="4">生成头像4</button>
+  </view>
+  <view class="save">
+    <button type='primary' bindtap='save'>保存分享图</button>
+  </view>
+</view>

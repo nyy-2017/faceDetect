@@ -5,16 +5,26 @@
   </view>
   <block wx:else>
     <image class="title" src="../../assets/more/title8.png"></image>
+    <!-- 动态获取微信头像 -->
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="click" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      <image class="clicklogo" src="../../assets/avatar.png"></image>
+      <span>点击获取头像</span>
+    </button>
+    <button wx:else class="click">
+      <image class="clicklogo" bindtap="bindViewTap" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <span>{{userInfo.nickName}}</span>
+    </button>
+    
     <view class="content">
       <view class="hd" style="transform:rotateZ({{angle}}deg);">
-        <image class="logo" src="../../assets/wx_login.png"></image>
+        <!-- <image class="logo" src="../../assets/avatar.png"></image> -->
         <image class="wave" src="../../assets/more/wave.png" mode="aspectFill"></image>
         <image class="wave wave-bg" src="../../assets/more/wave.png" mode="aspectFill"></image>
       </view>
       <view class="bd">
          <image class="smalltitle" src="../../assets/more/confirm-word1.png"></image>
         <view class="confirm-btn" bindtap='goToIndex'>
-          <text>进入人脸识别小程序</text>
+          <text>进入IT博客小程序</text>
         </view>
         <text class="copyright">Copyright © 京-2020-10</text>
       </view>

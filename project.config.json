@@ -12,13 +12,13 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
-    "nodeModules": true,
+    "nodeModules": false,
     "autoAudits": true,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
     "uglifyFileName": true,
     "checkInvalidKey": true,
-    "checkSiteMap": true,
+    "checkSiteMap": false,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
     "useMultiFrameRuntime": false,
@@ -38,7 +38,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.7.2",
+  "libVersion": "2.12.2",
   "appid": "wx787f0f5c257e0d8f",
   "projectname": "faceDetect",
   "debugOptions": {
@@ -48,18 +48,23 @@
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "pages/start/start",
+          "pathName": "pages/start/start",
+          "scene": null
+        }
+      ]
     }
   }
 }

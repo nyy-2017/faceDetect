@@ -94,6 +94,33 @@ page{
   height: 200rpx;
   transition: all .35s ease;
 }
+/* 点击获取图像 */
+button::after {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.click {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffb6c1;
+  left: 30%;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  /* margin: auto; */
+}
+.clicklogo {
+  width: 160rpx;
+  height: 160rpx;
+  z-index: 200;
+  border-radius: 50%;
+}
+.click span { 
+  text-align: left;
+ }
+ /*  */
 .logo {
   position: absolute;
   z-index: 2;

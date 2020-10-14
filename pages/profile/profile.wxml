@@ -11,7 +11,7 @@
   </view>
 </view>
 <view class="cells">
-  <navigator class="item" url="/pages/persons/persons">个人资料</navigator>
+  <navigator class="item" url="/pages/person/person">个人资料</navigator>
   <navigator class="item">常见问题</navigator>
   <navigator class="item">使用条款</navigator>
   <navigator class="item">隐私权政策</navigator>

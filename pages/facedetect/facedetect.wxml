@@ -1,0 +1,32 @@
+<view class="faces">
+  <view class="image">
+    <image src="{{img}}" mode="aspectFill"></image>
+  </view>
+  <view class="result" wx:if="{{beauty}}">
+    <view><text>性别：<text>{{ beauty.gender > 50 ? '♂男' : '♀女' }}</text></text></view>
+    <view><text>年龄：<text>{{ beauty.age }}岁</text></text></view>
+    <view>
+      <text>表情：</text>
+      <text wx:if="{{ beauty.expression < 10 }}">黯然伤神</text>
+      <text wx:elif="{{ beauty.expression < 20 }}">半嗔半喜</text>
+      <text wx:elif="{{ beauty.expression < 30 }}">似笑非笑</text>
+      <text wx:elif="{{ beauty.expression < 40 }}">笑逐颜开</text>
+      <text wx:elif="{{ beauty.expression < 50 }}">莞尔一笑</text>
+      <text wx:elif="{{ beauty.expression < 60 }}">喜上眉梢</text>
+      <text wx:elif="{{ beauty.expression < 70 }}">眉开眼笑</text>
+      <text wx:elif="{{ beauty.expression < 80 }}">笑尽妖娆</text>
+      <text wx:elif="{{ beauty.expression < 90 }}">心花怒放</text>
+      <text wx:else>一笑倾城</text>
+    </view>
+    <view><text>颜值：{{beauty.beauty}}（0 - 100）</text></view>
+    <view wx:if="{{ beauty.glass }}">你好丫四眼仔~</view>
+  </view>
+
+  <view class="controls">
+    <view class="tips" wx:if="{{ showTips }}">短按拍照，长按选择照片</view>
+    <button class="button" hover-class="button-active" bindtap="handleClick" bindlongtap="handleClick">
+      <icon></icon>
+      <text>自拍/长按</text>
+    </button>
+  </view>
+  </view>
